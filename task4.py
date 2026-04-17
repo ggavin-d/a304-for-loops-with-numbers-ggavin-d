@@ -22,4 +22,38 @@ Enter total payments for month(2)  : 75
 2% interest has been charged: 1.01
 Your closing balance is $51.51
 
+
+while
+    ask user and enter purchases
+    ask user and enter payments
+    previous balance + purchases - payments = closing balance
+    interest = 2% of closing balance
+    final closing balance = closing balance + interest
+
+
+
 """
+
+
+months = 1
+balance = 0
+
+while months < 13:
+
+
+    mpurchases = float(input(f"Enter total purchases for # of months:({months}) ")) 
+    mpayments = float(input(f"Enter total payments for # of months:({months}) ")) 
+
+
+    closingbalance = balance + mpurchases - mpayments
+    interest = closingbalance * 0.02
+    fclosingbalance = closingbalance + interest
+    balance = balance+fclosingbalance
+
+
+    print(f"2 percent interest has been charged: ${round(interest , 2)}")
+    print(f"your closing balance is ${round(fclosingbalance , 2)}")
+    print("<-------------------------------------->")
+    months = months+1
+
+

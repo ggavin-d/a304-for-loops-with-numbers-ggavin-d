@@ -16,4 +16,18 @@ the sum of the series is xxxx
 example:
 enter a number: 4
 the sum of the series is 1234
+
+  
 """
+x = int(input("enter a number"))
+
+
+f = int(1)
+sum = 0
+
+for i in range(1, x+1):
+    sum = sum + f
+    print(f)
+    f = (f * 10) + 1
+print("-------")
+print("the sum of the series is:" , sum)

@@ -22,3 +22,11 @@ enter a number:4
 ****
 
 """
+
+l = int(input('enter length'))
+w = int(input('enter width'))
+
+for i in range(l): # printing vertical rows range = number of vertrows
+    print()
+    for i in range(w): # printing vertical rows range = number of vertrows
+        print('*', end='')
